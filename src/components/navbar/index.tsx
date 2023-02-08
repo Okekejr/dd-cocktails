@@ -1,9 +1,13 @@
-import { Flex, Link } from "@chakra-ui/react";
+import { Flex, Link, useDisclosure } from "@chakra-ui/react";
 import { FC } from "react";
 import { Logo } from "../logo";
+import { MobileDrawer } from "./MobileDrawer";
+import { MobileToggle } from "./MobileToggle";
 import { NavLinks } from "./NavLinks";
+import { ToggleColorMode } from "./ToggleColorMode";
 
 export const Navbar: FC = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Flex
       py={{ base: 3, md: 2 }}
@@ -31,7 +35,7 @@ export const Navbar: FC = () => {
         justify="space-between"
         alignItems="center"
         maxW="container.xl"
-        w="100%"
+        w={{ base: "100%", md: "90%", lg: "100%" }}
         px={{ base: 6, lg: 24 }}
         zIndex={1}
       >
@@ -43,8 +47,18 @@ export const Navbar: FC = () => {
           marginInlineEnd={{ md: "1rem" }}
           display={{ base: "none", md: "flex", lg: "flex" }}
           height="2.5rem"
-          gap={{ base: "1.2rem", md: "1rem", lg: "0.5rem" }}
+          gap={{ base: "1.2rem", md: "2rem", lg: "4rem" }}
         />
+
+        <MobileToggle
+          isOpen={isOpen}
+          onClick={onOpen}
+          marginInlineStart={{ base: "1rem" }}
+          mr={-4}
+        />
+
+        <ToggleColorMode />
+        <MobileDrawer isOpen={isOpen} onClose={onClose} />
       </Flex>
     </Flex>
   );
