@@ -1,10 +1,10 @@
-import { FC } from "react"
-import { Box, BoxProps, Button } from "@chakra-ui/react"
-import { Hamburger } from "../_icons/Hamburger"
+import { FC } from "react";
+import { Box, BoxProps, Button } from "@chakra-ui/react";
+import { Hamburger } from "../_icons/Hamburger";
 
 interface MobileToggleProps extends BoxProps {
-  isOpen?: boolean
-  onClick?: () => void
+  isOpen?: boolean;
+  onClick?: () => void;
 }
 
 export const MobileToggle: FC<MobileToggleProps> = ({
@@ -14,14 +14,14 @@ export const MobileToggle: FC<MobileToggleProps> = ({
 }) => {
   return (
     <Box
-      background="transparent"
+      background="#FBD38D"
       as={Button}
       display={{ base: "block", md: "none" }}
       onClick={onClick}
-      _hover={{ bg: "transparent" }}
+      _hover={{ bg: "#000" }}
       {...rest}
     >
       <Hamburger />
     </Box>
-  )
-}
+  );
+};

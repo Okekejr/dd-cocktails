@@ -14,6 +14,7 @@ export const NavLinks: FC<FlexProps> = (props) => {
                 as={Link}
                 href={routeGroup.url}
                 background="transparent"
+                _hover={{ color: "#FBD38D", textDecor: "none" }}
                 w="fit-content"
               >
                 {routeGroup.title}
