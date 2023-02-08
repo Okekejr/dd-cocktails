@@ -1,9 +1,8 @@
 import { Text } from "@chakra-ui/react";
 import { FC } from "react";
-import { Navbar } from "../navbar";
 
 const HomePage: FC = () => {
-  return <Navbar />;
+  return <Text>Hello</Text>;
 };
 
 export default HomePage;
