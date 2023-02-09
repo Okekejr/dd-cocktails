@@ -2,7 +2,7 @@ import { Text } from "@chakra-ui/react";
 import { FC } from "react";
 
 const HomePage: FC = () => {
-  return <Text>Hello</Text>;
+  return <Text mt={24}>Hello</Text>;
 };
 
 export default HomePage;
