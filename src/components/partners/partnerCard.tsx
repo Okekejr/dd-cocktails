@@ -7,7 +7,7 @@ interface Props extends LinkProps {
 }
 
 export const PartnerCard: FC<Props> = ({ data, ...rest }) => {
-  const { name, url, icon } = data;
+  const { url, icon } = data;
   return (
     <Link
       href={url}
