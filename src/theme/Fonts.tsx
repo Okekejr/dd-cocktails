@@ -14,7 +14,10 @@ export const FontFaces = () => (
         font-style: normal;
         font-weight: 400;
         font-display: swap;
-        src: url(/assets/fonts/GoudyStM-webfont.woff) format('woff');
+        src: url(/assets/fonts/GoudyStM-webfont.woff) format('woff'),
+             url(/assets/fonts/Sorts Mill Goudy Regular.woff2) format('woff2');
+             url(/assets/fonts/SortsMillGoudy-Regular.ttf) format('ttf'),
+             url(/assets/fonts/Sorts Mill Goudy Regular.otf) format('otf'),
       }
 
       @font-face {
@@ -22,7 +25,10 @@ export const FontFaces = () => (
         font-style: Italic;
         font-weight: 400;
         font-display: swap;
-        src: url(/assets/fonts/GoudyStM-Italic-webfont.woff) format('woff');
+        src: url(/assets/fonts/GoudyStM-Italic-webfont.woff) format('woff'),
+             url(/assets/fonts/Sorts Mill Goudy Italic.woff2) format('woff2'),
+             url(/assets/fonts/Sorts Mill Goudy Italic.ttf) format('ttf'),
+             url(/assets/fonts/Sorts Mill Goudy Italic.otf) format('otf'),
       }
 
       @font-face {
