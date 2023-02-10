@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { Contacts } from "../contacts";
+import { Footer } from "../footer";
 import { Hero } from "../hero";
 import { Partners } from "../partners";
 import { PartnerData } from "../partners/partnerData";
@@ -10,8 +11,9 @@ const HomePage: FC = () => {
     <>
       <Hero />
       <Pitcher />
-      <Partners data={PartnerData} mb={8} />
+      <Partners data={PartnerData} mb={{ base: 12, md: 8 }} />
       <Contacts />
+      <Footer />
     </>
   );
 };
