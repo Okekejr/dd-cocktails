@@ -22,6 +22,7 @@ export const MobileNavLinks: FC<NavLinksProps> = ({ onClose, ...rest }) => {
               <Link
                 href={routeGroup.url}
                 _active={{ bg: "transparent" }}
+                color="#fff"
                 _hover={{ color: "#FBD38D" }}
                 fontSize="button"
                 onClick={onClose}
