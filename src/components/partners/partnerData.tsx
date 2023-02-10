@@ -27,7 +27,7 @@ export const PartnerData: Partner = {
   scrappys: {
     name: "Scrappys Bitters",
     url: "https://www.scrappysbitters.com/",
-    icon: <Scrappys width="24rem" h="17rem" />,
+    icon: <Scrappys width="22rem" h="17rem" />,
   },
 
   nikka: {

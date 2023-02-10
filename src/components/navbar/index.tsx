@@ -51,8 +51,6 @@ export const Navbar: FC<Props> = ({ isShrunk, ...rest }) => {
 
         <NavLinks
           marginInlineEnd={{ md: "1rem" }}
-          background={isShrunk ? "" : "background.100"}
-          backdropFilter={isShrunk ? "" : "blur(5px)"}
           display={{ base: "none", md: "flex", lg: "flex" }}
           height="2.5rem"
           gap={{ base: "1.2rem", md: "2rem", lg: "4rem" }}
