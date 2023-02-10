@@ -16,15 +16,15 @@ export const Pitcher: FC = () => {
         justifyContent="space-between"
         flexDir={{ base: "column", md: "row" }}
       >
-        <Flex flexDir="column">
+        <Flex flexDir="column" mb={12}>
           <PitchText mb={8} />
           <Offers />
         </Flex>
-        <Flex flexDir="column" mr={8}>
+        <Flex flexDir="column" mr={{ md: 0, lg: 8 }}>
           <Enquiery mb={12} />
           <Phone mb={12} />
           <OpenHours mb={12} />
-          <Location />
+          <Location mb={8} />
         </Flex>
       </Box>
     </SectionContainer>
