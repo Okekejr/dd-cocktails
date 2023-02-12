@@ -13,9 +13,24 @@ export const NavLinks: FC<FlexProps> = (props) => {
               <MenuItem
                 as={Link}
                 href={routeGroup.url}
+                position="relative"
                 background="transparent"
-                _hover={{ color: "#FBD38D", textDecor: "none" }}
                 w="fit-content"
+                _hover={{
+                  color: "#FBD38D",
+                  textDecor: "none",
+                  _after: { w: "70%" },
+                }}
+                _after={{
+                  content: `""`,
+                  position: "absolute",
+                  backgroundColor: "#C53030",
+                  width: "0",
+                  height: "3px",
+                  left: 3,
+                  bottom: 0,
+                  transition: "width 0.35s ease 0s",
+                }}
               >
                 {routeGroup.title}
               </MenuItem>
