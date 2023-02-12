@@ -12,9 +12,9 @@ export const Disclaimer: FC<FlexProps> = (props) => {
           Chukwuebuka Emmanuel Okeke (ME)
         </Link>
         and it does not intend to promote anything other than my skills. It was
-        developed with Figma, Next.js, and Typescript. This website represents
-        an Idea only and isn't a real place yet. For more information contact my
-        email below.
+        developed with Figma, Next.js, Chakra UI and Typescript. This website
+        represents an Idea only and isn't a real place yet. For more information
+        contact my email below.
       </Text>
     </Flex>
   );
