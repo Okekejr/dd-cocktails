@@ -9,11 +9,12 @@ import { TextsComp } from "./texts";
 
 export const Pitcher: FC = () => {
   return (
-    <SectionContainer>
+    <SectionContainer id="pitcher">
       <Box
         display="flex"
         justifyContent="space-between"
         flexDir={{ base: "column", md: "row" }}
+        mt={{ md: 8 }}
       >
         <Flex flexDir="column" mb={12} mr={{ md: 16, lg: 0 }}>
           <PitchText mb={8} />
