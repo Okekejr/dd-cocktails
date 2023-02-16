@@ -14,8 +14,13 @@ export const PitchText: FC<BoxProps> = (props) => {
           Elegant Mixology and Craftmanship
         </Heading>
       </Box>
-      <Box w={{ base: "20rem", md: "23rem", lg: "30rem" }}>
-        <Text fontSize="1rem" letterSpacing="0.4px" lineHeight="1.6em">
+      <Box w={{ base: "fit-content", md: "23rem", lg: "30rem" }}>
+        <Text
+          fontSize="1rem"
+          letterSpacing="0.4px"
+          lineHeight="1.6em"
+          textAlign="justify"
+        >
           Step into a world of mixology magic and experience the art of craft
           cocktails like never before! Our bartenders are true wizards behind
           the bar, conjuring up masterpieces with every pour. From classic

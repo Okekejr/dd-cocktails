@@ -32,8 +32,8 @@ const CareerPage: FC = () => {
         >
           <Flex
             flexDir="column"
-            w={{ base: "20rem", md: "23rem", lg: "40rem" }}
-            mr={{ md: 16, lg: 0 }}
+            w={{ base: "fit-content", md: "30rem", lg: "40rem" }}
+            mr={{ md: 12, lg: 0 }}
           >
             <Text fontSize="1.5rem" lineHeight="1.6em" mb={{ base: 4, md: 8 }}>
               OUR PURPOSE IS:
@@ -47,7 +47,7 @@ const CareerPage: FC = () => {
                 Support individual and collective growth and development.
               </ListItem>
             </UnorderedList>
-            <Text mt={{ base: 4, md: 12 }}>
+            <Text textAlign="justify" mt={{ base: 4, md: 12 }}>
               We are always looking for bright, friendly people to join our
               team! If you love making sure everyone around you is having a
               great time, and want to progress your career with a world-class
@@ -55,7 +55,7 @@ const CareerPage: FC = () => {
             </Text>
           </Flex>
           <Flex flexDir="column" mb={{ base: 8, md: 0 }}>
-            <Box w="100%" h={{ base: "30vh", md: "40vh" }} display="flex">
+            <Box w="100%" h={{ base: "30vh", lg: "40vh" }} display="flex">
               <Image
                 src="/assets/img/team.jpg"
                 style={{ width: "100%", objectFit: "cover" }}
