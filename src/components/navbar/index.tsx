@@ -21,7 +21,7 @@ export const Navbar: FC<Props> = ({ isShrunk, ...rest }) => {
       top="0"
       w="100%"
       justify="center"
-      borderBottom="2px solid"
+      borderBottom="3px solid"
       backgroundColor="#fff"
       color="#000"
       borderBottomColor="#FBD38D"
