@@ -1,7 +1,7 @@
 import CareerPage from "@/components/_pages/careerpage";
-import { FC } from "react";
+import { NextPage } from "next";
 
-const Career: FC = () => {
+const Career: NextPage = () => {
   return <CareerPage />;
 };
 

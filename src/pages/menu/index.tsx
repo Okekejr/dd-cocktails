@@ -1,7 +1,7 @@
 import MenuPage from "@/components/_pages/menupage";
-import { FC } from "react";
+import { NextPage } from "next";
 
-const Menu: FC = () => {
+const Menu: NextPage = () => {
   return <MenuPage />;
 };
 
