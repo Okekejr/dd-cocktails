@@ -1,14 +1,15 @@
 import { List, ListProps } from "@chakra-ui/react";
 import { FC } from "react";
 import { MenuCard } from "./menuCard";
-import { MenuD } from "./menuData";
+import { CardP } from "./menuData";
 
 interface Props extends ListProps {
-  data: MenuD;
+  data: CardP;
 }
 
 export const MenuGrid: FC<Props> = ({ data, ...rest }) => {
   const drinks = Object.values(data);
+
   return (
     <List
       display="grid"
