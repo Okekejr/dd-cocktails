@@ -57,10 +57,11 @@ const CareerPage: FC = () => {
           <Flex flexDir="column" mb={{ base: 8, md: 0 }}>
             <Box w="100%" h={{ base: "30vh", lg: "40vh" }} display="flex">
               <Image
-                src="/assets/img/team.jpg"
+                src="/assets/img/team.png"
                 style={{ width: "100%", objectFit: "cover" }}
                 width={100}
                 height={60}
+                unoptimized
                 alt="team image"
               />
             </Box>
