@@ -3,11 +3,11 @@ import {
   Container,
   Flex,
   Heading,
+  Image,
   ListItem,
   Text,
   UnorderedList,
 } from "@chakra-ui/react";
-import Image from "next/image";
 import { FC } from "react";
 import { Footer } from "../footer";
 import { SectionContainer } from "../SectionContainer";
@@ -57,9 +57,8 @@ const CareerPage: FC = () => {
           <Flex flexDir="column" mb={{ base: 8, md: 0 }}>
             <Box w="100%" h={{ base: "30vh", lg: "40vh" }} display="flex">
               <Image
-                src="/assets/img/team.jpg"
+                src="/assets/img/team.png"
                 style={{ width: "100%", objectFit: "cover" }}
-                width={100}
                 height={60}
                 alt="team image"
               />

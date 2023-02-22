@@ -9,7 +9,7 @@ export const Contacts: FC = () => {
       w={{ base: "auto" }}
       h="70vh"
       display="flex"
-      backgroundImage="/assets/img/drink.jpg"
+      backgroundImage="/assets/img/drink.png"
       backgroundSize="cover"
       backgroundRepeat="no-repeat"
     >
