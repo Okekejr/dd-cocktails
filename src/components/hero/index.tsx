@@ -1,5 +1,4 @@
-import { Box } from "@chakra-ui/react";
-import Image from "next/image";
+import { Box, Image } from "@chakra-ui/react";
 import { FC } from "react";
 
 export const Hero: FC = () => {
@@ -15,7 +14,6 @@ export const Hero: FC = () => {
         <Image
           src="/assets/img/bar.png"
           style={{ width: "100%", height: "60vh", objectFit: "cover" }}
-          width={100}
           height={60}
           alt="bar image"
         />

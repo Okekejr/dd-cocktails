@@ -3,6 +3,7 @@ import {
   Button,
   Container,
   ContainerProps,
+  Divider,
   Flex,
   Heading,
   Text,
@@ -48,12 +49,20 @@ const MenuPage: FC<Props> = ({ data, ...rest }) => {
           </Text>
           <MenuGrid data={reduce} />
           <Box mt={{ base: 4, md: 12 }}>
-            <Button
-              _hover={{ bgColor: "#FBD38D", color: "#000" }}
-              onClick={clickHandler}
-            >
-              Load more
-            </Button>
+            {help <= reduce.length ? (
+              <Button
+                _hover={{ bgColor: "#FBD38D", color: "#000" }}
+                onClick={clickHandler}
+              >
+                Load more
+              </Button>
+            ) : (
+              <Divider
+                mt={8}
+                width={{ base: "10rem", md: "20rem" }}
+                orientation="horizontal"
+              />
+            )}
           </Box>
         </Flex>
       </SectionContainer>
