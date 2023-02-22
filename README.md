@@ -23,7 +23,6 @@ yarn run dev
 This contains a custom brand logo, nav links and color mode button that chnages between light and dark mode.
 <img width="1439" alt="Screenshot 2023-02-22 at 13 32 13" src="https://user-images.githubusercontent.com/85338878/220739025-234a8b83-9833-4bb6-a017-7655ebf51837.png">
 
-
 <b>Home Page:</b>
 <br/>
 This contains hero image section:
@@ -41,10 +40,9 @@ contact section:
 footer { this is on all pages }:
 <img width="1436" alt="Screenshot 2023-02-22 at 13 41 19" src="https://user-images.githubusercontent.com/85338878/220741078-b67c819b-dd88-408c-9f93-e3f8ee0c8704.png">
 
-
 <b>Menu Page:</b>
 <br/>
-This loads the menu of 3 items at first: 
+This loads the menu of 3 items at first:
 <img width="1440" alt="Screenshot 2023-02-22 at 13 07 25" src="https://user-images.githubusercontent.com/85338878/220738544-09816f63-a27a-4831-aa53-0433c3dc3488.png">
 
 each image changes opacity and transforms on hover:
@@ -52,7 +50,6 @@ each image changes opacity and transforms on hover:
 
 each item produces a modal with more information about the item on click:
 <img width="1435" alt="Screenshot 2023-02-22 at 13 07 52" src="https://user-images.githubusercontent.com/85338878/220738676-ec410217-0735-44af-a7a8-efa8da20098f.png">
-
 
 <b>Career Page:</b>
 <br/>
@@ -67,7 +64,6 @@ Choose your fighter haha
 
 ( Menu dark )
 <img width="1440" alt="Screenshot 2023-02-22 at 13 45 03" src="https://user-images.githubusercontent.com/85338878/220741806-9d04552c-7ea0-47c2-b8c1-6b17a0dfff16.png">
-
 
 #### Live link
 
