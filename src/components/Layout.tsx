@@ -1,4 +1,4 @@
-import { FC, useEffect, useRef, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { Flex, Box, FlexProps } from "@chakra-ui/react";
 import { Navbar } from "./navbar";

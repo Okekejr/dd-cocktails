@@ -6,7 +6,7 @@ import { LinksCard } from "./LinksCard";
 export const FooterLinks: FC = () => {
   return (
     <Flex
-      w={{ base: "12rem", md: "20rem" }}
+      w={{ base: "15rem", md: "20rem" }}
       justifyContent="space-between"
       mt={{ base: "2rem", md: "0" }}
     >
