@@ -6,16 +6,22 @@ import {
   ModalBody,
   useDisclosure,
   Box,
-  Image,
   BoxProps,
   Text,
   Heading,
+  chakra,
 } from "@chakra-ui/react";
 import { CardM } from "./menuData";
+import NextImage from "next/image";
 
 interface Props extends BoxProps {
   data: CardM;
 }
+
+const MyImages = chakra(NextImage, {
+  shouldForwardProp: (prop) =>
+    ["width", "height", "src", "alt", "onClick"].includes(prop),
+});
 
 export const MenuCard: FC<Props> = ({ data, ...rest }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -23,7 +29,7 @@ export const MenuCard: FC<Props> = ({ data, ...rest }) => {
 
   return (
     <Box {...rest}>
-      <Image
+      <MyImages
         onClick={onOpen}
         _hover={{ transform: "scale(1.13)", opacity: 1, cursor: "pointer" }}
         overflow="hidden"
@@ -31,8 +37,9 @@ export const MenuCard: FC<Props> = ({ data, ...rest }) => {
         transform="scale(0.95)"
         transition="transform 0.8s, opacity 0.5s"
         src={image}
-        width="100%"
-        height="20rem"
+        width={1000}
+        height={320}
+        quality={90}
         alt={name}
       />
 
@@ -40,7 +47,14 @@ export const MenuCard: FC<Props> = ({ data, ...rest }) => {
         <ModalOverlay />
         <ModalContent p={4}>
           <ModalBody>
-            <Image src={image} mb={4} alt={name} />
+            <MyImages
+              src={image}
+              mb={4}
+              width={300}
+              height={250}
+              quality={90}
+              alt={name}
+            />
             <Heading mb={4}>{name}</Heading>
             <Text as="p">{description}</Text>
           </ModalBody>
